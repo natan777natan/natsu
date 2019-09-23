@@ -16,9 +16,11 @@
 @import "bootstrap-sprockets";  /*ここを追加*/
 @import "bootstrap";            /*ここを追加*/
 
-// 全ページ共通　大枠
-.big_waku {
-    width: 90%;
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .clearfix::after {
     content: "";
@@ -26,15 +28,26 @@
     clear: both;
 }
 
+// 全ページ共通　大枠
+.big_waku {
+    width: 90%;
+    background-color: orange;
+    margin: 0 auto;
+}
+
 // --写真関係--
 // 写真の枠
 .shasin_wakus {
     width:60%;
+    margin: 0 auto;
+    background-color: lime;
+
 }
 // 一つの写真
 .shasin_wakus {
     width: 80%;
-    mergin: 0 auto;
+    margin: 0 auto;
+    height: 50px;
 }
 
 // header
